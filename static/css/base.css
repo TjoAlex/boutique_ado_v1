@@ -1,6 +1,5 @@
 html {
     height: 100%;
-    /*allow h100 classes in vertical centering to work */
 }
 
 body {
@@ -18,7 +17,6 @@ body {
     justify-content: center;
     height: 1.5rem;
     width: 1.5rem;
-    /* icon class from another CSS framework Bulma, ensure icons will stay perfectly centered and have consistent size*/
 }
 
 .logo-font {
@@ -27,7 +25,6 @@ body {
 
 .main-logo-link {
     width: fit-content;
-    /* only takes space that is required*/
 }
 
 .shop-now-button {
@@ -94,5 +91,16 @@ body {
 
     .header-container {
         padding-top: 164px;
+    }
+}
+
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
     }
 }
